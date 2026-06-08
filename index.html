@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Sushant Ashok Dhete — AI Developer, Web Developer & Automation Enthusiast building intelligent digital solutions." />
+  <meta name="keywords" content="AI Developer, Web Developer, Portfolio, JavaScript, Python, Automation, NSE Trading" />
+  <meta name="author" content="Sushant Ashok Dhete" />
+  <meta property="og:title" content="Sushant Ashok Dhete — AI Developer Portfolio" />
+  <meta property="og:description" content="Building intelligent digital solutions through AI, automation, and modern web technologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sushantdhete.github.io" />
+  <title>Sushant Ashok Dhete — AI Developer | Web Developer | Automation</title>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sushant Ashok Dhete",
+    "jobTitle": "AI Developer",
+    "description": "Building intelligent digital solutions through AI, automation, and modern web technologies.",
+    "url": "https://sushantdhete.github.io",
+    "sameAs": [
+      "https://github.com/sushantdhete",
+      "https://linkedin.com/in/sushantdhete"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<!-- ── Loading Screen ── -->
+<div id="loader" class="loader" aria-hidden="true" role="status">
+  <div class="loader-logo">SAD.</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <span class="loader-text">Initializing systems…</span>
+</div>
+
+<!-- ── Navigation ── -->
+<nav id="nav" class="nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Home">SAD<span>.dev</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"           class="nav-link active">Home</a></li>
+      <li><a href="about.html"           class="nav-link">About</a></li>
+      <li><a href="skills.html"          class="nav-link">Skills</a></li>
+      <li><a href="projects.html"        class="nav-link">Projects</a></li>
+      <li><a href="certifications.html"  class="nav-link">Certs</a></li>
+      <li><a href="blog.html"            class="nav-link">Blog</a></li>
+      <li><a href="contact.html"         class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <a href="resume.html" class="btn btn-primary" style="padding:0.55rem 1.2rem;font-size:0.85rem">Resume</a>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Mobile Nav ── -->
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html"          class="nav-link">Home</a>
+  <a href="about.html"          class="nav-link">About</a>
+  <a href="skills.html"         class="nav-link">Skills</a>
+  <a href="projects.html"       class="nav-link">Projects</a>
+  <a href="certifications.html" class="nav-link">Certs</a>
+  <a href="blog.html"           class="nav-link">Blog</a>
+  <a href="contact.html"        class="nav-link">Contact</a>
+  <a href="resume.html"         class="btn btn-primary">Resume</a>
+</nav>
+
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <!-- Left Content -->
+    <div>
+      <div class="hero-badge hero-enter-1">
+        <span class="hero-badge-dot"></span>
+        Available for Opportunities
+      </div>
+
+      <h1 class="text-hero hero-title hero-enter-2" id="hero-title">
+        Hi, I'm<br>
+        <span class="grad-text">Sushant Ashok Dhete</span>
+      </h1>
+
+      <div class="hero-typing-wrap hero-enter-3">
+        <span class="hero-typing-static">I'm a&nbsp;</span>
+        <span id="typing-text" class="grad-text-accent">AI Developer</span>
+        <span class="typing-cursor"></span>
+      </div>
+
+      <p class="hero-desc hero-enter-4">
+        "Building intelligent digital solutions through AI, automation, and modern web technologies."
+        Transforming complex problems into elegant, scalable solutions.
+      </p>
+
+      <div class="hero-actions hero-enter-5">
+        <a href="projects.html" class="btn btn-primary">🚀 View Projects</a>
+        <a href="contact.html"  class="btn btn-outline">📩 Hire Me</a>
+      </div>
+
+      <div class="hero-socials hero-enter-5">
+        <span class="hero-socials-label">// find me on</span>
+        <a href="https://github.com/sushantdhete"    target="_blank" rel="noopener" class="social-link" aria-label="GitHub">💻</a>
+        <a href="https://linkedin.com/in/sushant-ashok-dhete"   target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">🔗</a>
+        <a href="https://twitter.com/sushantdhete"     target="_blank" rel="noopener" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="https://wa.me/919999999999"         target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+
+    <!-- Right Visual -->
+    <div class="hero-visual hero-visual-enter">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-ring"></div>
+        <div class="hero-avatar-ring-2"></div>
+        <div class="hero-avatar-img">
+          <!-- Replace src with your actual photo -->
+          <div class="hero-avatar-placeholder">SAD</div>
+        </div>
+        <!-- Floating Badges -->
+        <div class="hero-float-badge">
+          <span class="badge-icon">🤖</span>
+          <span>AI Developer</span>
+        </div>
+        <div class="hero-float-badge">
+          <span class="badge-icon">⚡</span>
+          <span>Open to Work</span>
+        </div>
+        <div class="hero-float-badge">
+          <span class="badge-icon">📍</span>
+          <span>India</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     STATS
+════════════════════════════════════════ -->
+<section class="section" aria-label="Statistics" style="padding-top:2rem">
+  <div class="container">
+    <div class="stats-grid stagger-children">
+      <div class="stat-card reveal">
+        <div class="stat-number" data-count="15" data-suffix="+">0+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-number" data-count="8" data-suffix="+">0+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-number" data-count="500" data-suffix="+">0+</div>
+        <div class="stat-label">Learning Hours</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-number" data-count="20" data-suffix="+">0+</div>
+        <div class="stat-label">Technologies Used</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     ABOUT PREVIEW
+════════════════════════════════════════ -->
+<section class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center">
+      <div class="reveal">
+        <div class="section-tag">// About Me</div>
+        <h2 class="text-h1" id="about-heading" style="margin-bottom:var(--space-md)">
+          Passionate about building the <span class="grad-text">future</span> with AI
+        </h2>
+        <p style="color:var(--clr-text-muted);margin-bottom:var(--space-md);line-height:1.8">
+          I'm a developer and AI enthusiast with a deep focus on creating intelligent digital solutions.
+          My journey started with curiosity about how machines learn, which led me to explore the intersection
+          of AI, automation, and web development.
+        </p>
+        <p style="color:var(--clr-text-muted);margin-bottom:var(--space-lg);line-height:1.8">
+          I believe technology should solve real problems. Every line of code I write is aimed at creating
+          tools that are not only functional but genuinely useful and impactful.
+        </p>
+        <a href="about.html" class="btn btn-ghost">Learn More About Me →</a>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-md)">
+          <div class="glass" style="padding:var(--space-lg);text-align:center;border-radius:var(--r-lg)">
+            <div style="font-size:2.5rem;margin-bottom:0.5rem">🤖</div>
+            <div style="font-family:var(--font-display);font-weight:600;margin-bottom:0.25rem">AI & ML</div>
+            <div style="font-size:0.8rem;color:var(--clr-text-muted)">GPT-4, Claude, Gemini</div>
+          </div>
+          <div class="glass" style="padding:var(--space-lg);text-align:center;border-radius:var(--r-lg)">
+            <div style="font-size:2.5rem;margin-bottom:0.5rem">⚡</div>
+            <div style="font-family:var(--font-display);font-weight:600;margin-bottom:0.25rem">Automation</div>
+            <div style="font-size:0.8rem;color:var(--clr-text-muted)">Workflows & APIs</div>
+          </div>
+          <div class="glass" style="padding:var(--space-lg);text-align:center;border-radius:var(--r-lg)">
+            <div style="font-size:2.5rem;margin-bottom:0.5rem">🌐</div>
+            <div style="font-family:var(--font-display);font-weight:600;margin-bottom:0.25rem">Web Dev</div>
+            <div style="font-size:0.8rem;color:var(--clr-text-muted)">HTML · CSS · JS</div>
+          </div>
+          <div class="glass" style="padding:var(--space-lg);text-align:center;border-radius:var(--r-lg)">
+            <div style="font-size:2.5rem;margin-bottom:0.5rem">📈</div>
+            <div style="font-family:var(--font-display);font-weight:600;margin-bottom:0.25rem">Trading Tech</div>
+            <div style="font-size:0.8rem;color:var(--clr-text-muted)">NSE · Algo Systems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     SKILLS OVERVIEW
+════════════════════════════════════════ -->
+<section class="section" style="background:rgba(255,255,255,0.015)" aria-labelledby="skills-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">// Skills</div>
+      <h2 class="text-h1" id="skills-heading">What I bring to the table</h2>
+      <p style="color:var(--clr-text-muted);max-width:500px;margin:var(--space-sm) auto 0">
+        A diverse skill set spanning AI tools, web development, automation, and problem solving.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Frontend -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">🌐</div>
+          <div class="skill-cat-name">Frontend</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">CSS3 & Animations</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">JavaScript</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="82"></div></div>
+        </div>
+      </div>
+
+      <!-- AI Tools -->
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">🤖</div>
+          <div class="skill-cat-name">AI Tools</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Prompt Engineering</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">ChatGPT / GPT-4</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Claude & Gemini</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+        </div>
+      </div>
+
+      <!-- Automation -->
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">⚡</div>
+          <div class="skill-cat-name">Automation</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Workflow Automation</span><span class="skill-pct">84%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="84"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">API Integration</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Python Scripting</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Problem Solving -->
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon">🧠</div>
+          <div class="skill-cat-name">Soft Skills</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Problem Solving</span><span class="skill-pct">93%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="93"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Communication</span><span class="skill-pct">87%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="87"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Leadership</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:var(--space-xl)">
+      <a href="skills.html" class="btn btn-ghost">View All Skills →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FEATURED PROJECTS
+════════════════════════════════════════ -->
+<section class="section" aria-labelledby="projects-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">// Featured Work</div>
+      <h2 class="text-h1" id="projects-heading">Projects that make an impact</h2>
+    </div>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="automation">Automation</button>
+    </div>
+
+    <div id="projects-grid" class="projects-grid" role="list" aria-label="Projects">
+      <!-- Populated by projects.js -->
+    </div>
+
+    <div class="text-center" style="margin-top:var(--space-xl)">
+      <a href="projects.html" class="btn btn-ghost">View All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Project Detail Modal -->
+<div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal" id="project-modal-content"></div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     TIMELINE
+════════════════════════════════════════ -->
+<section class="section" style="background:rgba(255,255,255,0.015)" aria-labelledby="timeline-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl)">
+      <div class="reveal">
+        <div class="section-tag">// Journey</div>
+        <h2 class="text-h1" id="timeline-heading" style="margin-bottom:var(--space-xl)">
+          My learning <span class="grad-text">timeline</span>
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 — Present</div>
+            <div class="timeline-title">AI Developer & Portfolio Build</div>
+            <div class="timeline-sub">Building intelligent systems with modern AI tools and automation frameworks.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-title">Advanced Web Development</div>
+            <div class="timeline-sub">Mastered React, Next.js, and full-stack development patterns.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-title">Started Coding Journey</div>
+            <div class="timeline-sub">Began with HTML, CSS, and JavaScript. Built first portfolio project.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-title">Computer Science Foundation</div>
+            <div class="timeline-sub">Strong academic base in algorithms, data structures, and programming fundamentals.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="section-tag">// Dashboard</div>
+        <h2 class="text-h2" style="margin-bottom:var(--space-lg)">Productivity <span class="grad-text">Overview</span></h2>
+
+        <div class="glass" style="padding:var(--space-lg);border-radius:var(--r-xl);margin-bottom:var(--space-md)">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-md)">
+            <span style="font-family:var(--font-display);font-weight:600">2024 Activity</span>
+            <span class="visitor-badge">👁 <span id="visitor-count">—</span> visits</span>
+          </div>
+          <div id="productivity-chart"></div>
+        </div>
+
+        <div id="achievement-tracker" style="display:flex;flex-direction:column;gap:0.5rem"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════ -->
+<section class="section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">// Testimonials</div>
+      <h2 class="text-h1" id="testimonials-heading">What people say</h2>
+    </div>
+
+    <div class="testimonials-track reveal">
+      <div class="testimonials-inner">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"An exceptional developer who consistently delivers beyond expectations. Their AI integration work on our project saved us weeks of manual effort and the code quality was outstanding."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RS</div>
+            <div>
+              <div class="testimonial-name">Rajesh Sharma</div>
+              <div class="testimonial-role">CTO, TechStartup Pvt. Ltd.</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Their deep understanding of AI tools combined with practical web development skills is rare. Delivered a fully automated content pipeline that transformed our workflow completely."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">PM</div>
+            <div>
+              <div class="testimonial-name">Priya Mehta</div>
+              <div class="testimonial-role">Digital Marketing Lead</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Brilliant problem solver with a unique ability to bridge business needs and technical implementation. Their trading dashboard concept demonstrated exceptional analytical thinking."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div>
+              <div class="testimonial-name">Arun Kumar</div>
+              <div class="testimonial-role">Senior Software Engineer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-nav" role="tablist" aria-label="Testimonial navigation">
+      <div class="testimonials-dot active" role="tab" aria-selected="true" tabindex="0"></div>
+      <div class="testimonials-dot" role="tab" aria-selected="false" tabindex="0"></div>
+      <div class="testimonials-dot" role="tab" aria-selected="false" tabindex="0"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     CTA
+════════════════════════════════════════ -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag" style="justify-content:center">// Let's Connect</div>
+      <h2 class="text-h1" id="cta-heading" style="margin-bottom:var(--space-md)">
+        Ready to build something <span class="grad-text-accent">amazing</span> together?
+      </h2>
+      <p style="color:var(--clr-text-muted);max-width:520px;margin:0 auto var(--space-xl)">
+        Whether you have a project in mind, want to collaborate, or just say hi — I'm always open to meaningful connections.
+      </p>
+      <div class="flex-center gap-md" style="flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-primary">📩 Get In Touch</a>
+        <a href="resume.html"  class="btn btn-outline">📄 Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<!-- ── Footer ── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">SAD<span>.dev</span></a>
+        <p>Building intelligent digital solutions through AI, automation, and modern web technologies.</p>
+        <div class="hero-socials" style="margin-top:var(--space-sm)">
+          <a href="#" class="social-link" aria-label="GitHub">💻</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">🔗</a>
+          <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <a href="about.html"          class="footer-link">About Me</a>
+        <a href="skills.html"         class="footer-link">Skills</a>
+        <a href="projects.html"       class="footer-link">Projects</a>
+        <a href="certifications.html" class="footer-link">Certifications</a>
+      </div>
+      <div>
+        <div class="footer-col-title">More</div>
+        <a href="resume.html"  class="footer-link">Resume</a>
+        <a href="blog.html"    class="footer-link">Blog</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Stack</div>
+        <span class="footer-link">HTML5 · CSS3 · JS</span>
+        <span class="footer-link">Python · FastAPI</span>
+        <span class="footer-link">AI Tools · Automation</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2024 Sushant Ashok Dhete. Crafted with ❤️ and ☕</span>
+      <div class="flex gap-sm">
+        <span class="tag tag-green">Available for Work</span>
+        <span class="tag tag-blue">India 🇮🇳</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ── AI Widget ── -->
+<div class="ai-widget" role="complementary" aria-label="AI Assistant">
+  <div id="ai-chat" class="ai-chat" aria-live="polite">
+    <div class="ai-chat-header">
+      <div class="ai-chat-avatar">🤖</div>
+      <div>
+        <div class="ai-chat-name">AI Assistant</div>
+        <div class="ai-chat-status">● Online</div>
+      </div>
+    </div>
+    <div id="ai-messages" class="ai-messages">
+      <div class="ai-msg ai-msg-bot">👋 Hi! I'm your AI portfolio assistant. Ask me anything about my projects or skills!</div>
+    </div>
+    <div class="ai-chat-input">
+      <input id="ai-input" class="ai-input" type="text" placeholder="Ask me anything…" aria-label="Chat input" />
+      <button id="ai-send" class="ai-send" aria-label="Send message">➤</button>
+    </div>
+  </div>
+  <button id="ai-widget-btn" class="ai-btn" aria-label="Toggle AI assistant">🤖</button>
+</div>
+
+<!-- ── Back to Top ── -->
+<button id="back-top" class="back-top" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

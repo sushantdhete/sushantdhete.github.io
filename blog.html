@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blog by Sushant Ashok Dhete — Articles on AI, Web Development, Automation, and Tech."/>
+  <title>Blog — Sushant Ashok Dhete</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+<div id="loader" class="loader"><div class="loader-logo">SAD.</div><div class="loader-bar"><div class="loader-fill"></div></div><span class="loader-text">Loading blog…</span></div>
+<nav id="nav" class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">SAD<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li><li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="certifications.html" class="nav-link">Certs</a></li><li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle">☀️</button>
+      <a href="resume.html" class="btn btn-primary" style="padding:0.55rem 1.2rem;font-size:0.85rem">Resume</a>
+      <button id="hamburger" class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav id="mobile-nav" class="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+  <a href="skills.html" class="nav-link">Skills</a><a href="projects.html" class="nav-link">Projects</a>
+  <a href="certifications.html" class="nav-link">Certs</a><a href="blog.html" class="nav-link">Blog</a>
+  <a href="contact.html" class="nav-link">Contact</a><a href="resume.html" class="btn btn-primary">Resume</a>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-bg" style="position:absolute;inset:0;pointer-events:none"><div class="hero-gradient"></div><div class="hero-grid"></div></div>
+  <div class="container">
+    <div class="section-tag" style="justify-content:center">// Thoughts & Articles</div>
+    <h1 class="text-hero hero-enter-1">My <span class="grad-text">Blog</span></h1>
+    <p class="hero-enter-2" style="color:var(--clr-text-muted);max-width:520px;margin:1rem auto 0">Insights on AI, web development, automation, and the future of technology — written by Sushant Ashok Dhete.</p>
+    <div class="breadcrumb hero-enter-3"><a href="index.html">Home</a><span>/</span><span>Blog</span></div>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container">
+
+    <!-- Search -->
+    <div class="search-bar reveal" style="max-width:520px">
+      <span class="search-icon">🔍</span>
+      <input id="blog-search" class="search-input" type="text" placeholder="Search articles…" aria-label="Search blog posts"/>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="projects-filter reveal" style="margin-bottom:var(--space-xl)">
+      <button class="filter-btn active" data-blog-filter="all">All</button>
+      <button class="filter-btn" data-blog-filter="ai">🤖 AI Tools</button>
+      <button class="filter-btn" data-blog-filter="webdev">🌐 Web Dev</button>
+      <button class="filter-btn" data-blog-filter="productivity">⚡ Productivity</button>
+      <button class="filter-btn" data-blog-filter="trading">📈 Trading</button>
+      <button class="filter-btn" data-blog-filter="tech">🔬 Tech Trends</button>
+    </div>
+
+    <!-- Featured Post -->
+    <div class="reveal" style="margin-bottom:var(--space-xl)">
+      <div class="glass" style="padding:var(--space-xl);border-radius:var(--r-xl);border:1px solid rgba(91,110,245,0.2);position:relative;overflow:hidden" data-keywords="ai llm prompt engineering chatgpt claude gemini">
+        <div style="position:absolute;top:0;right:0;width:300px;height:300px;background:radial-gradient(circle,rgba(91,110,245,0.1) 0%,transparent 70%);pointer-events:none"></div>
+        <div style="position:relative;z-index:1">
+          <div class="flex gap-sm" style="margin-bottom:var(--space-md)">
+            <span class="tag tag-blue">Featured</span>
+            <span class="tag tag-gold">🤖 AI Tools</span>
+          </div>
+          <h2 class="text-h1" style="margin-bottom:var(--space-sm);max-width:700px">
+            How I Use Claude, GPT-4 &amp; Gemini Together to Build Faster
+          </h2>
+          <p style="color:var(--clr-text-muted);max-width:650px;line-height:1.8;margin-bottom:var(--space-lg)">
+            After hundreds of hours of working with multiple LLMs simultaneously, I've developed a workflow that uses each model's strengths for specific tasks — Claude for reasoning and long-form writing, GPT-4 for code generation, and Gemini for research. Here's my exact setup.
+          </p>
+          <div class="flex gap-md" style="align-items:center;flex-wrap:wrap">
+            <div class="blog-meta">
+              <span>✍️ Sushant Ashok Dhete</span>
+              <span style="margin:0 0.5rem">·</span>
+              <span>November 2024</span>
+              <span style="margin:0 0.5rem">·</span>
+              <span>8 min read</span>
+            </div>
+            <a href="#" class="btn btn-primary" style="font-size:0.85rem">Read Article →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid" id="blog-grid">
+
+      <article class="blog-card" data-keywords="ai tools chatgpt automation workflow" data-category="ai">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(91,110,245,0.15),rgba(0,212,170,0.1))"></div><span class="blog-thumb-icon">🤖</span></div>
+        <div class="blog-body">
+          <div class="blog-category">AI Tools</div>
+          <h3 class="blog-title">5 AI Prompting Techniques That Doubled My Productivity</h3>
+          <p class="blog-excerpt">Chain-of-thought, few-shot examples, persona setting — here are the prompting patterns I use daily to get better outputs from any LLM.</p>
+          <div class="blog-meta"><span>Oct 2024 · 5 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="trading nse algorithm python fyers pine script" data-category="trading">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(245,200,66,0.15),rgba(255,107,107,0.1))"></div><span class="blog-thumb-icon">📈</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-gold)">Trading Tech</div>
+          <h3 class="blog-title">Building My First NSE Algo Trading Bot in Python</h3>
+          <p class="blog-excerpt">How I connected Fyers API, wrote strategy logic, added risk management, and deployed a 24/7 trading engine on AWS Lightsail for under ₹800/month.</p>
+          <div class="blog-meta"><span>Sep 2024 · 12 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="web development css animation glassmorphism portfolio" data-category="webdev">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(0,212,170,0.15),rgba(91,110,245,0.1))"></div><span class="blog-thumb-icon">🎨</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-accent)">Web Development</div>
+          <h3 class="blog-title">Glassmorphism Done Right: The CSS Techniques I Use</h3>
+          <p class="blog-excerpt">A deep dive into how I built this portfolio's glassmorphism aesthetic — backdrop-filter, layered gradients, border tricks, and accessibility considerations.</p>
+          <div class="blog-meta"><span>Oct 2024 · 7 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="productivity system automation notion habit tracking morning routine" data-category="productivity">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(255,107,107,0.15),rgba(245,200,66,0.1))"></div><span class="blog-thumb-icon">⚡</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-accent2)">Productivity</div>
+          <h3 class="blog-title">My AI-Powered Personal Productivity Stack in 2024</h3>
+          <p class="blog-excerpt">The exact tools, automations, and workflows I use to manage projects, track habits, process information, and stay focused as a solo developer.</p>
+          <div class="blog-meta"><span>Aug 2024 · 6 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="pine script tradingview indicator strategy vwap ema" data-category="trading">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(245,200,66,0.2),rgba(91,110,245,0.08))"></div><span class="blog-thumb-icon">📊</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-gold)">Trading Tech</div>
+          <h3 class="blog-title">VWAP + EMA Strategy in Pine Script v5: A Complete Guide</h3>
+          <p class="blog-excerpt">How I built a NIFTY/BANKNIFTY intraday strategy combining VWAP, 20 EMA, candlestick patterns, and pullback detection with strict IST time filters.</p>
+          <div class="blog-meta"><span>Sep 2024 · 10 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="fastapi python backend rest api deployment aws" data-category="webdev">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(91,110,245,0.1))"></div><span class="blog-thumb-icon">🚀</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-primary-glow)">Backend Dev</div>
+          <h3 class="blog-title">Why I Chose FastAPI Over Django for My Trading Platform</h3>
+          <p class="blog-excerpt">Performance benchmarks, async support, automatic API documentation, and the Pydantic type system — all the reasons FastAPI won for my use case.</p>
+          <div class="blog-meta"><span>Aug 2024 · 8 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="ai future technology trends 2024 llm agent automation" data-category="tech">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(0,212,170,0.2),rgba(91,110,245,0.08))"></div><span class="blog-thumb-icon">🔬</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-accent)">Tech Trends</div>
+          <h3 class="blog-title">AI Agents in 2024: Why I Think Every App Will Be Autonomous</h3>
+          <p class="blog-excerpt">My perspective on where AI agents are heading — from simple chatbots to fully autonomous systems that plan, reason, and act without human input.</p>
+          <div class="blog-meta"><span>Jul 2024 · 9 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-keywords="make automation workflow zapier no-code content" data-category="productivity">
+        <div class="blog-thumb"><div class="blog-thumb-bg" style="background:linear-gradient(135deg,rgba(255,107,107,0.1),rgba(245,200,66,0.15))"></div><span class="blog-thumb-icon">🔄</span></div>
+        <div class="blog-body">
+          <div class="blog-category" style="color:var(--clr-accent2)">Automation</div>
+          <h3 class="blog-title">I Automated My Content Pipeline with Make.com + GPT-4</h3>
+          <p class="blog-excerpt">Step-by-step breakdown of how I built a fully automated content system that researches, writes, formats, and publishes articles without me touching it.</p>
+          <div class="blog-meta"><span>Jul 2024 · 11 min</span><a href="#" style="color:var(--clr-primary-glow)">Read →</a></div>
+        </div>
+      </article>
+
+    </div><!-- /blog-grid -->
+
+  </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="cta-section">
+  <div class="container reveal">
+    <div class="section-tag" style="justify-content:center">// Stay Updated</div>
+    <h2 class="text-h1" style="margin-bottom:var(--space-md)">Enjoyed the content?</h2>
+    <p style="color:var(--clr-text-muted);margin-bottom:var(--space-lg);max-width:480px;margin-left:auto;margin-right:auto">Follow me on social media for the latest articles, project updates, and tech insights.</p>
+    <div class="flex-center gap-md" style="flex-wrap:wrap">
+      <a href="https://linkedin.com/in/sushant-ashok-dhete" target="_blank" rel="noopener" class="btn btn-primary">🔗 Follow on LinkedIn</a>
+      <a href="https://github.com/sushantdhete" target="_blank" rel="noopener" class="btn btn-outline">💻 Follow on GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding-top:0"><span class="footer-copy">© 2024 Sushant Ashok Dhete</span><div class="flex gap-sm"><a href="index.html" class="footer-link" style="margin:0">Home</a><a href="projects.html" class="footer-link" style="margin:0">Projects</a><a href="contact.html" class="footer-link" style="margin:0">Contact</a></div></div></div></footer>
+<div class="ai-widget"><div id="ai-chat" class="ai-chat"><div class="ai-chat-header"><div class="ai-chat-avatar">🤖</div><div><div class="ai-chat-name">AI Assistant</div><div class="ai-chat-status">● Online</div></div></div><div id="ai-messages" class="ai-messages"><div class="ai-msg ai-msg-bot">📰 Use the search bar to find specific articles!</div></div><div class="ai-chat-input"><input id="ai-input" class="ai-input" type="text" placeholder="Ask me anything…"/><button id="ai-send" class="ai-send">➤</button></div></div><button id="ai-widget-btn" class="ai-btn">🤖</button></div>
+<button id="back-top" class="back-top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script>
+// Blog category filter
+document.querySelectorAll('[data-blog-filter]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-blog-filter]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.blogFilter;
+    document.querySelectorAll('#blog-grid .blog-card').forEach(card=>{
+      const show = f==='all'||card.dataset.category===f;
+      card.style.display=show?'':'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

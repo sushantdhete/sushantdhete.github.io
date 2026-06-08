@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Projects by Sushant Ashok Dhete — AI tools, trading dashboards, web apps and automation systems."/>
+  <title>Projects — Sushant Ashok Dhete</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+<div id="loader" class="loader"><div class="loader-logo">SAD.</div><div class="loader-bar"><div class="loader-fill"></div></div><span class="loader-text">Loading projects…</span></div>
+<nav id="nav" class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">SAD<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="skills.html" class="nav-link">Skills</a></li><li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="certifications.html" class="nav-link">Certs</a></li><li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle">☀️</button>
+      <a href="resume.html" class="btn btn-primary" style="padding:0.55rem 1.2rem;font-size:0.85rem">Resume</a>
+      <button id="hamburger" class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav id="mobile-nav" class="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+  <a href="skills.html" class="nav-link">Skills</a><a href="projects.html" class="nav-link">Projects</a>
+  <a href="certifications.html" class="nav-link">Certs</a><a href="blog.html" class="nav-link">Blog</a>
+  <a href="contact.html" class="nav-link">Contact</a><a href="resume.html" class="btn btn-primary">Resume</a>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-bg" style="position:absolute;inset:0;pointer-events:none"><div class="hero-gradient"></div><div class="hero-grid"></div></div>
+  <div class="container">
+    <div class="section-tag" style="justify-content:center">// My Work</div>
+    <h1 class="text-hero hero-enter-1">Featured <span class="grad-text">Projects</span></h1>
+    <p class="hero-enter-2" style="color:var(--clr-text-muted);max-width:560px;margin:1rem auto 0">Real-world solutions I've built — from AI-powered tools to trading infrastructure and automation systems.</p>
+    <div class="breadcrumb hero-enter-3"><a href="index.html">Home</a><span>/</span><span>Projects</span></div>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="container">
+    <!-- Stats Row -->
+    <div class="stats-grid reveal" style="margin-bottom:var(--space-xl)">
+      <div class="stat-card"><div class="stat-number" data-count="6" data-suffix="">0</div><div class="stat-label">Projects Showcased</div></div>
+      <div class="stat-card"><div class="stat-number" data-count="15" data-suffix="+">0+</div><div class="stat-label">Technologies Used</div></div>
+      <div class="stat-card"><div class="stat-number" data-count="3" data-suffix="">0</div><div class="stat-label">Categories</div></div>
+      <div class="stat-card"><div class="stat-number" data-count="100" data-suffix="%">0%</div><div class="stat-label">Passion Driven</div></div>
+    </div>
+
+    <!-- Filter -->
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" data-filter="all">🔥 All Projects</button>
+      <button class="filter-btn" data-filter="ai">🤖 AI</button>
+      <button class="filter-btn" data-filter="web">🌐 Web Dev</button>
+      <button class="filter-btn" data-filter="automation">⚡ Automation</button>
+    </div>
+
+    <!-- Grid -->
+    <div id="projects-grid" class="projects-grid" role="list"></div>
+  </div>
+</section>
+
+<!-- ════════ HIGHLIGHT — TRADING PLATFORM ════════ -->
+<section class="section" style="background:rgba(255,255,255,0.015)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center">
+      <div class="reveal">
+        <div class="section-tag">// Featured Build</div>
+        <h2 class="text-h1" style="margin-bottom:var(--space-md)">NSE Algo Trading <span class="grad-text">Platform</span></h2>
+        <p style="color:var(--clr-text-muted);line-height:1.8;margin-bottom:var(--space-md)">My most ambitious ongoing project — a full-stack algorithmic trading platform for NSE markets built on AWS Lightsail. Currently trading NIFTY, BANKNIFTY, SENSEX & FINNIFTY options and futures across multiple timeframes.</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:var(--space-lg)">
+          <div class="flex gap-sm" style="align-items:center"><span class="tag tag-green">✅ Auth System</span><span style="font-size:0.8rem;color:var(--clr-text-muted)">JWT-based secure login</span></div>
+          <div class="flex gap-sm" style="align-items:center"><span class="tag tag-green">✅ Fyers API</span><span style="font-size:0.8rem;color:var(--clr-text-muted)">Live order placement working</span></div>
+          <div class="flex gap-sm" style="align-items:center"><span class="tag tag-green">✅ Paper Trading</span><span style="font-size:0.8rem;color:var(--clr-text-muted)">Simulation engine complete</span></div>
+          <div class="flex gap-sm" style="align-items:center"><span class="tag tag-blue">🔄 Strategy Engine</span><span style="font-size:0.8rem;color:var(--clr-text-muted)">In active development</span></div>
+          <div class="flex gap-sm" style="align-items:center"><span class="tag tag-gold">⏳ Backtesting</span><span style="font-size:0.8rem;color:var(--clr-text-muted)">Next milestone</span></div>
+          <div class="flex gap-sm" style="align-items:center"><span class="tag tag-gold">⏳ AI CoPilot</span><span style="font-size:0.8rem;color:var(--clr-text-muted)">Planned</span></div>
+        </div>
+        <div class="tech-stack" style="justify-content:flex-start">
+          <div class="tech-item" style="font-size:0.8rem"><span>🐍</span>Python</div>
+          <div class="tech-item" style="font-size:0.8rem"><span>⚛️</span>React</div>
+          <div class="tech-item" style="font-size:0.8rem"><span>🚀</span>FastAPI</div>
+          <div class="tech-item" style="font-size:0.8rem"><span>☁️</span>AWS</div>
+          <div class="tech-item" style="font-size:0.8rem"><span>🗄️</span>PostgreSQL</div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="glass" style="padding:var(--space-lg);border-radius:var(--r-xl)">
+          <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--clr-text-dim);margin-bottom:var(--space-sm)">// live_dashboard.py</div>
+          <pre style="font-family:var(--font-mono);font-size:0.78rem;color:var(--clr-text-muted);overflow-x:auto;line-height:1.8"><code><span style="color:#5b6ef5">@app</span>.websocket(<span style="color:#00d4aa">"/ws/live"</span>)
+<span style="color:#5b6ef5">async</span> <span style="color:#f5c842">def</span> stream_market_data(
+    ws: WebSocket, token: str
+):
+    <span style="color:#5b6ef5">await</span> ws.accept()
+    <span style="color:#8b5cf6">while</span> True:
+        tick = <span style="color:#5b6ef5">await</span> fyers.get_tick(
+            symbol=<span style="color:#00d4aa">"NSE:NIFTY50"</span>
+        )
+        <span style="color:#5b6ef5">await</span> ws.send_json({
+            <span style="color:#00d4aa">"ltp"</span>: tick.ltp,
+            <span style="color:#00d4aa">"change"</span>: tick.pct_change,
+            <span style="color:#00d4aa">"volume"</span>: tick.volume,
+            <span style="color:#00d4aa">"timestamp"</span>: tick.ts
+        })
+        <span style="color:#5b6ef5">await</span> asyncio.sleep(<span style="color:#f5c842">0.5</span>)</code></pre>
+          <div style="margin-top:var(--space-md);padding:var(--space-sm) var(--space-md);background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.2);border-radius:var(--r-md);font-size:0.8rem;color:var(--clr-accent)">
+            ● Live on AWS Lightsail — Mumbai Region (ap-south-1)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container reveal">
+    <h2 class="text-h1" style="margin-bottom:var(--space-md)">Have a project idea?</h2>
+    <p style="color:var(--clr-text-muted);margin-bottom:var(--space-lg);max-width:460px;margin-left:auto;margin-right:auto">I love building impactful tools. Let's talk about your vision and make it a reality.</p>
+    <div class="flex-center gap-md" style="flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-primary">📩 Let's Collaborate</a>
+      <a href="https://github.com/sushantdhete" target="_blank" rel="noopener" class="btn btn-outline">💻 GitHub Profile</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Project Modal -->
+<div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal" id="project-modal-content"></div>
+</div>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding-top:0"><span class="footer-copy">© 2024 Sushant Ashok Dhete</span><div class="flex gap-sm"><a href="index.html" class="footer-link" style="margin:0">Home</a><a href="about.html" class="footer-link" style="margin:0">About</a><a href="contact.html" class="footer-link" style="margin:0">Contact</a></div></div></div></footer>
+<div class="ai-widget"><div id="ai-chat" class="ai-chat"><div class="ai-chat-header"><div class="ai-chat-avatar">🤖</div><div><div class="ai-chat-name">AI Assistant</div><div class="ai-chat-status">● Online</div></div></div><div id="ai-messages" class="ai-messages"><div class="ai-msg ai-msg-bot">🚀 Click any project card for full details!</div></div><div class="ai-chat-input"><input id="ai-input" class="ai-input" type="text" placeholder="Ask me anything…"/><button id="ai-send" class="ai-send">➤</button></div></div><button id="ai-widget-btn" class="ai-btn">🤖</button></div>
+<button id="back-top" class="back-top">↑</button>
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
