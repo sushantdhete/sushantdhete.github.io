@@ -1855,3 +1855,50 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   pointer-events: none;
   opacity: 0.6;
 }
+
+/* ── Updated Logo Style — Hexagon + Sushant ── */
+.nav-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+}
+.nav-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+[data-theme="light"] .nav-logo-text {
+  color: #1a1d36;
+  -webkit-text-fill-color: #1a1d36;
+}
+
+/* ── Hero name — White/Silver shimmer ── */
+.hero-name-silver {
+  background: linear-gradient(100deg, #e8e8e8 0%, #ffffff 40%, #c0c0c0 70%, #e8e8e8 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: silverShimmer 4s linear infinite;
+}
+@keyframes silverShimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ── Loader logo update ── */
+.loader-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.loader-logo-text {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
