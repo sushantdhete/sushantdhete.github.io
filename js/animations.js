@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.cursor = 'default';
     el.addEventListener('mouseenter', () => {
       el.style.color = 'var(--clr-primary-glow)';
-      el.style.textShadow = '0 0 20px rgba(91,110,245,0.4)';
+      el.style.textShadow = '0 0 20px rgba(212,160,23,0.5)';
       el.style.transition = 'all 0.3s';
     });
     el.addEventListener('mouseleave', () => {
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   tracker.innerHTML = achievements.map(a => `
-    <div class="flex gap-sm" style="align-items:center;padding:0.75rem;border-radius:var(--r-md);background:${a.done ? 'rgba(0,212,170,0.07)' : 'rgba(255,255,255,0.03)'};border:1px solid ${a.done ? 'rgba(0,212,170,0.2)' : 'var(--clr-border)'}">
+    <div class="flex gap-sm" style="align-items:center;padding:0.75rem;border-radius:var(--r-md);background:${a.done ? 'rgba(39,174,96,0.07)' : 'rgba(255,255,255,0.03)'};border:1px solid ${a.done ? 'rgba(39,174,96,0.2)' : 'var(--clr-border)'}">
       <span style="font-size:1.3rem">${a.icon}</span>
       <span style="font-size:0.875rem;flex:1;${!a.done ? 'color:var(--clr-text-muted)' : ''}">${a.label}</span>
       <span style="font-size:0.9rem">${a.done ? '✅' : '⏳'}</span>

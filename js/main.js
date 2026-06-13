@@ -217,7 +217,7 @@ function initParticles() {
   function draw() {
     ctx.clearRect(0, 0, W, H);
 
-    const color = isDark() ? '140, 160, 255' : '91, 110, 245';
+    const color = isDark() ? '212, 160, 23' : '212, 160, 23';
 
     particles.forEach(p => {
       p.x += p.vx;

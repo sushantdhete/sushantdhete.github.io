@@ -11,7 +11,7 @@ const PROJECTS = [
     category: 'ai',
     tags: ['AI', 'GPT-4', 'Node.js', 'React'],
     icon: '🤖',
-    color: '#5b6ef5',
+    color: '#d4a017',
     desc: 'An intelligent system that generates complete, production-ready websites from natural language descriptions using GPT-4 and automated deployment pipelines.',
     challenge: 'Translating vague user requirements into structured, functional code while maintaining design consistency and best practices.',
     solution: 'Implemented a multi-step prompt chain with a design system context window that guides GPT-4 to produce consistent, accessible, and performant HTML/CSS/JS output.',
@@ -26,7 +26,7 @@ const PROJECTS = [
     category: 'web',
     tags: ['React', 'TypeScript', 'Firebase'],
     icon: '💼',
-    color: '#00d4aa',
+    color: '#27ae60',
     desc: 'A drag-and-drop portfolio builder with real-time preview, custom domain support, and AI-powered content suggestions for professionals.',
     challenge: 'Building a real-time collaborative editor with conflict resolution while maintaining sub-100ms response times.',
     solution: 'Used Firebase Realtime Database with operational transformation algorithms for conflict-free collaborative editing.',
@@ -56,7 +56,7 @@ const PROJECTS = [
     category: 'automation',
     tags: ['Python', 'OpenAI', 'Make.com', 'WordPress'],
     icon: '✍️',
-    color: '#8b5cf6',
+    color: '#e8a020',
     desc: 'End-to-end content pipeline that researches trending topics, generates SEO-optimized articles, creates social media variants, and auto-publishes across platforms.',
     challenge: 'Maintaining consistent brand voice across AI-generated content and ensuring factual accuracy without manual review of every piece.',
     solution: 'Built a two-pass AI system: a generator model produces content while a critic model evaluates tone, accuracy, and SEO factors before publication.',
@@ -86,7 +86,7 @@ const PROJECTS = [
     category: 'automation',
     tags: ['React', 'Electron', 'SQLite', 'AI'],
     icon: '⚡',
-    color: '#00d4aa',
+    color: '#27ae60',
     desc: 'Desktop productivity suite featuring AI task prioritization, focus mode with Pomodoro tracking, habit analytics, and cross-app automation workflows.',
     challenge: 'Integrating with 20+ external apps (Notion, Slack, Calendar, GitHub) while maintaining a unified data model and offline-first capability.',
     solution: 'Designed a plugin architecture with standardized adapters for each integration, using SQLite for offline storage with background sync when online.',
@@ -176,13 +176,13 @@ function openProjectModal(id) {
           <h4 style="font-family:var(--font-display);margin-bottom:0.5rem;color:var(--clr-accent2)">⚡ Challenge</h4>
           <p style="font-size:0.875rem;color:var(--clr-text-muted)">${p.challenge}</p>
         </div>
-        <div style="padding:var(--space-md);background:rgba(0,212,170,0.06);border:1px solid rgba(0,212,170,0.15);border-radius:var(--r-lg)">
+        <div style="padding:var(--space-md);background:rgba(39,174,96,0.06);border:1px solid rgba(39,174,96,0.15);border-radius:var(--r-lg)">
           <h4 style="font-family:var(--font-display);margin-bottom:0.5rem;color:var(--clr-accent)">💡 Solution</h4>
           <p style="font-size:0.875rem;color:var(--clr-text-muted)">${p.solution}</p>
         </div>
       </div>
 
-      <div style="padding:var(--space-md);background:rgba(91,110,245,0.06);border:1px solid rgba(91,110,245,0.15);border-radius:var(--r-lg);margin-bottom:var(--space-lg)">
+      <div style="padding:var(--space-md);background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.15);border-radius:var(--r-lg);margin-bottom:var(--space-lg)">
         <h4 style="font-family:var(--font-display);margin-bottom:0.5rem;color:var(--clr-primary-glow)">🏆 Results</h4>
         <p style="font-size:0.875rem;color:var(--clr-text-muted)">${p.results}</p>
       </div>

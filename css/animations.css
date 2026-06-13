@@ -105,7 +105,7 @@
 
 /* ── Gradient Animated Text ── */
 .grad-text-animated {
-  background: linear-gradient(270deg, #5b6ef5, #00d4aa, #f5c842, #5b6ef5);
+  background: linear-gradient(270deg, #d4a017, #f5c842, #e8a020, #d4a017);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,9 +115,9 @@
 
 /* ── Card Hover Glow ── */
 .hover-glow:hover {
-  box-shadow: 0 0 0 1px rgba(91,110,245,0.4),
-              0 8px 32px rgba(91,110,245,0.2),
-              0 0 60px rgba(91,110,245,0.1);
+  box-shadow: 0 0 0 1px rgba(212,160,23,0.4),
+              0 8px 32px rgba(212,160,23,0.2),
+              0 0 60px rgba(212,160,23,0.1);
 }
 
 /* ── Cursor Effect ── */
@@ -139,7 +139,7 @@
   top: 0; left: 0;
   width: 36px; height: 36px;
   border-radius: 50%;
-  border: 1.5px solid rgba(91,110,245,0.5);
+  border: 1.5px solid rgba(212,160,23,0.5);
   pointer-events: none;
   z-index: 99998;
   transform: translate(-50%, -50%);
@@ -148,7 +148,7 @@
 }
 
 .cursor-dot.hover  { width: 12px; height: 12px; background: var(--clr-accent); }
-.cursor-ring.hover { width: 60px; height: 60px; border-color: rgba(0,212,170,0.4); }
+.cursor-ring.hover { width: 60px; height: 60px; border-color: rgba(39,174,96,0.4); }
 
 /* ── Stagger Children ── */
 .stagger-children > * {
@@ -184,7 +184,7 @@
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(91,110,245,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212,160,23,0.1) 0%, transparent 70%);
   pointer-events: none;
   animation: neonPulse 3s ease-in-out infinite;
 }
@@ -195,7 +195,7 @@
 .blob {
   position: absolute;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  background: rgba(91,110,245,0.06);
+  background: rgba(212,160,23,0.06);
   animation: morphBlob 8s ease-in-out infinite;
   pointer-events: none;
 }
@@ -213,8 +213,8 @@
   font-family: var(--font-mono);
 }
 
-.tag-blue   { background: rgba(91,110,245,0.12); color: var(--clr-primary-glow); border: 1px solid rgba(91,110,245,0.2); }
-.tag-green  { background: rgba(0,212,170,0.1); color: var(--clr-accent); border: 1px solid rgba(0,212,170,0.2); }
+.tag-blue   { background: rgba(212,160,23,0.12); color: var(--clr-primary-glow); border: 1px solid rgba(212,160,23,0.25); }
+.tag-green  { background: rgba(39,174,96,0.1); color: var(--clr-accent); border: 1px solid rgba(39,174,96,0.25); }
 .tag-red    { background: rgba(255,107,107,0.1); color: var(--clr-accent2); border: 1px solid rgba(255,107,107,0.2); }
 .tag-gold   { background: rgba(245,200,66,0.1); color: var(--clr-gold); border: 1px solid rgba(245,200,66,0.2); }
 

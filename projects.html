@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="css/responsive.css"/>
 </head>
 <body>
-<div id="loader" class="loader"><div class="loader-logo-wrap"><svg width="36" height="36" viewBox="0 0 48 48" fill="none"><polygon points="24,3 43,13.5 43,34.5 24,45 5,34.5 5,13.5" fill="none" stroke="#7c6fe0" stroke-width="2"/><text x="24" y="30" text-anchor="middle" font-family="Courier New,monospace" font-size="18" font-weight="700" fill="#a0aaff">S</text></svg><span class="loader-logo-text">Sushant</span></div><div class="loader-bar"><div class="loader-fill"></div></div><span class="loader-text">Loading projects…</span></div>
+<div id="loader" class="loader"><div class="loader-logo-wrap"><svg width="36" height="36" viewBox="0 0 48 48" fill="none"><polygon points="24,3 43,13.5 43,34.5 24,45 5,34.5 5,13.5" fill="none" stroke="#d4a017" stroke-width="2"/><text x="24" y="30" text-anchor="middle" font-family="Courier New,monospace" font-size="18" font-weight="700" fill="#f5c842">S</text></svg><span class="loader-logo-text">Sushant</span></div><div class="loader-bar"><div class="loader-fill"></div></div><span class="loader-text">Loading projects…</span></div>
 <nav id="nav" class="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:10px;text-decoration:none"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,3 43,13.5 43,34.5 24,45 5,34.5 5,13.5" fill="none" stroke="#7c6fe0" stroke-width="2"/><text x="24" y="30" text-anchor="middle" font-family="Courier New,monospace" font-size="18" font-weight="700" fill="#a0aaff">S</text></svg><span class="nav-logo-text">Sushant</span></a>
+    <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:10px;text-decoration:none"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="24,3 43,13.5 43,34.5 24,45 5,34.5 5,13.5" fill="none" stroke="#d4a017" stroke-width="2"/><text x="24" y="30" text-anchor="middle" font-family="Courier New,monospace" font-size="18" font-weight="700" fill="#f5c842">S</text></svg><span class="nav-logo-text">Sushant</span></a>
     <ul class="nav-links">
       <li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
       <li><a href="skills.html" class="nav-link">Skills</a></li><li><a href="projects.html" class="nav-link active">Projects</a></li>
@@ -94,23 +94,23 @@
       <div class="reveal reveal-delay-2">
         <div class="glass" style="padding:var(--space-lg);border-radius:var(--r-xl)">
           <div style="font-family:var(--font-mono);font-size:0.7rem;color:var(--clr-text-dim);margin-bottom:var(--space-sm)">// live_dashboard.py</div>
-          <pre style="font-family:var(--font-mono);font-size:0.78rem;color:var(--clr-text-muted);overflow-x:auto;line-height:1.8"><code><span style="color:#5b6ef5">@app</span>.websocket(<span style="color:#00d4aa">"/ws/live"</span>)
-<span style="color:#5b6ef5">async</span> <span style="color:#f5c842">def</span> stream_market_data(
+          <pre style="font-family:var(--font-mono);font-size:0.78rem;color:var(--clr-text-muted);overflow-x:auto;line-height:1.8"><code><span style="color:#d4a017">@app</span>.websocket(<span style="color:#27ae60">"/ws/live"</span>)
+<span style="color:#d4a017">async</span> <span style="color:#f5c842">def</span> stream_market_data(
     ws: WebSocket, token: str
 ):
-    <span style="color:#5b6ef5">await</span> ws.accept()
-    <span style="color:#8b5cf6">while</span> True:
-        tick = <span style="color:#5b6ef5">await</span> fyers.get_tick(
-            symbol=<span style="color:#00d4aa">"NSE:NIFTY50"</span>
+    <span style="color:#d4a017">await</span> ws.accept()
+    <span style="color:#e8a020">while</span> True:
+        tick = <span style="color:#d4a017">await</span> fyers.get_tick(
+            symbol=<span style="color:#27ae60">"NSE:NIFTY50"</span>
         )
-        <span style="color:#5b6ef5">await</span> ws.send_json({
-            <span style="color:#00d4aa">"ltp"</span>: tick.ltp,
-            <span style="color:#00d4aa">"change"</span>: tick.pct_change,
-            <span style="color:#00d4aa">"volume"</span>: tick.volume,
-            <span style="color:#00d4aa">"timestamp"</span>: tick.ts
+        <span style="color:#d4a017">await</span> ws.send_json({
+            <span style="color:#27ae60">"ltp"</span>: tick.ltp,
+            <span style="color:#27ae60">"change"</span>: tick.pct_change,
+            <span style="color:#27ae60">"volume"</span>: tick.volume,
+            <span style="color:#27ae60">"timestamp"</span>: tick.ts
         })
-        <span style="color:#5b6ef5">await</span> asyncio.sleep(<span style="color:#f5c842">0.5</span>)</code></pre>
-          <div style="margin-top:var(--space-md);padding:var(--space-sm) var(--space-md);background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.2);border-radius:var(--r-md);font-size:0.8rem;color:var(--clr-accent)">
+        <span style="color:#d4a017">await</span> asyncio.sleep(<span style="color:#f5c842">0.5</span>)</code></pre>
+          <div style="margin-top:var(--space-md);padding:var(--space-sm) var(--space-md);background:rgba(39,174,96,0.08);border:1px solid rgba(39,174,96,0.2);border-radius:var(--r-md);font-size:0.8rem;color:var(--clr-accent)">
             ● Live on AWS Lightsail — Mumbai Region (ap-south-1)
           </div>
         </div>
